@@ -1,0 +1,31 @@
+GET /api/urls
+POST /api/urls
+GET /api/urls/:id
+
+POST /api/urls
+Request Body:
+{
+    long url:""
+}
+Response Body:
+{
+    id:""
+}
+Status: 201
+
+GET /api/urls
+Response Body:
+{
+    id:""
+    long_url:""
+}
+Status: 200
+
+
+GET /api/urls/:id
+Response Body:
+{
+    id:""
+    long_url:""
+}
+Status: 201,404
