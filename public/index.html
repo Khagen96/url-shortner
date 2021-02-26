@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js" ></script>
+
+</head>
+<body>
+    <nav>
+        <p><a href="#">URL Shortner</a></p>
+        <ul>
+        <li><a href="#">Test 1</a>
+            <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>  
+            </ul>
+        </li>
+        <li><a href="#">Test 2</a></li>
+        </ul>
+        </nav>
+        <div class="translate-content">
+            <div class="input-field" >
+                <textarea type="text" id="url-Input" placeholder="Enter your URL..." rows="3" cols="130"></textarea>
+                <input type="button" id="shorten-button" value= "Shorten">
+                <input type="button" id="clear-button" value= "Clear">
+                <input type="button" id="copy-button" value= "Copy">
+            </div>
+
+            <div class="display-all-url">
+            <textarea type="text" id="all-url" placeholder="All URL's will be dispalyed here..." rows="10" cols="130"></textarea>
+            <input type="button" id="get-all-button" value= "Get all links">
+            </div>
+
+            <div class="display-search-url">
+            <textarea type="text" id="search-result-url" placeholder="Enter short URL to search..." rows="3" cols="130"></textarea>
+            <input type="button" id="search-button" value= "Search">
+            <textarea type="text" id="search-result-url" placeholder="Your search result will appear here..." rows="3" cols="130"></textarea>
+            </div>
+        </div>
+
+
+       <!-- Footer Element
+        <div class="footer">
+        <p>Created By:KBH</p>
+        </div>
+        -->
+
+</body>
+</html>

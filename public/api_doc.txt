@@ -5,7 +5,7 @@ GET /api/urls/:id
 POST /api/urls
 Request Body:
 {
-    long url:""
+    long_url:""
 }
 Response Body:
 {

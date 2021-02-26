@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    background-color: #e8ebea;
+
+  }
+  nav{
+    width:100%;
+    height:50px;
+    background-color: white;
+  }
+  nav p{                  /* logo */
+    font-family: arial;
+    color:#222;
+    font-size: 22px;
+    line-height: 50px;
+    float:left;
+    padding: 0px 20px; /*left right*/
+  }
+  nav p a{                  /* logo */
+    text-decoration: none;
+    color:#222;
+  }
+  nav ul{
+    float: left;
+  }
+  nav ul li{
+    float:left;
+    list-style: none; 
+    position: relative; 
+  }
+  nav ul li a{
+    display: block;
+    font-family: arial;
+    color:#222;
+    font-size: 14px;
+    padding:18px 14px;
+    text-decoration: none;
+  }
+  nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 1px;
+  }
+  nav ul li:hover ul {
+    display: block;
+  
+  }
+  nav ul li ul li{ /*drop items*/
+    width:180px
+  }
+  nav ul li ul li a{ /*drop items*/
+    padding: 10px 14px;
+  }
+  nav ul li ul li a:hover{ /*drop items*/
+    background-color: #f3f3f3;
+  }
+  textarea{
+    resize: none;
+  }
+
+
+  
+/*  Footer element 
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:black;
+    background-color: white;
+  }  */
+  .translate-content{
+    margin: 5% 5% 0 5%;
+    padding: 3%;
+    background: rgb(142, 151, 151);
+
+  }
+
+
+
+  /* media queries for translate box
+    @media screen and(max-width:1200px){
+    .box{
+      width:40%;
+    }
+  }
+  @media screen and(max-width:600px){
+    .box{
+      width:90%;
+    }
+  }*/
+
+  
+  
+  
