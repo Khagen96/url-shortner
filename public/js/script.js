@@ -1,5 +1,5 @@
 function shortenURL() {
-    const inputURL = document.querySelector('#url-Input');
+    const inputURL = document.querySelector('#url-Input').value;
     
 
     const input = {
@@ -7,11 +7,13 @@ function shortenURL() {
     };
     console.log(input);
 
-    const url = new URL('./api/urls');
-    url.searchParams.append(url,input);
-    
+    const url = new URL('https://short--url.herokuapp.com/api/urls');
 
-    const promise = fetch(url);
+    const promise = fetch(url,{
+        method: "POST",
+        body:input
+
+    });
     
     promise
     .then((response)=>response.json())
