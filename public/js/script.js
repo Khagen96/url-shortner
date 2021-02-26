@@ -11,7 +11,7 @@ function shortenURL() {
 
     const promise = fetch(url,{
         method: "POST",
-        body:input
+        body:JSON.stringify(input)
 
     });
     
