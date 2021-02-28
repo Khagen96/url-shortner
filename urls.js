@@ -2,7 +2,7 @@ const express = require('express');
 const shortid = require('shortid');
 const router = express.Router();
 
-const urls ={};
+const { urls }=require("./urlData");
 
 router.get("/",(req,res)=>{ //get all urls
     const urlList=[];
@@ -14,10 +14,13 @@ router.get("/",(req,res)=>{ //get all urls
 });
 
 router.post("/",(req,res)=>{
+    // console.log(req.body);
     const long_url = req.body.long_url; //get long url from req body
     const id = shortid.generate();
-    urls[id] = long_url;        // store long url as value of key[id] in urls obj.
-    res.status(201).send(urls);
+    urls[id] = long_url;
+    console.log(id);        // store long url as value of key[id] in urls obj.
+    res.status(201).send({id});
+    // res.status(201).send(urls);
 });
 
 router.get("/:id",(req,res)=>{
